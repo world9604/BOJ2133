@@ -19,7 +19,7 @@ public class Main {
 
     // 3*D(N-2) + (2*D(N-4) + 2*D(N-6) + 2*D(0))
     static int getCount(int num, int[] dp) {
-        if (num == 0) return 0;
+        if (num == 0) return 1;
         if (num == 1) return 0;
         if (num == 2) return 3;
         if (dp[num] != 0) return dp[num];
